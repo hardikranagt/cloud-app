@@ -1,0 +1,47 @@
+[
+  {
+    "name": "AWS",
+    "children": [
+      { "name": "Compute", "route": "compute" },
+      {
+        "name": "Storage",
+        "children": [
+          { "name": "Storage Analysis 1", "route": "storageanalysis1" },
+          { "name": "Storage Analysis 2", "route": "storageanalysis2" }
+        ]
+      },
+      { "name": "Network", "route": "network" },
+      { "name": "Resource group", "route": "resourcegrouplist" }
+    ]
+  },
+  {
+    "name": "Azure",
+    "children": [
+      { "name": "Compute", "route": "compute" },
+      {
+        "name": "Storage",
+        "children": [
+          { "name": "Storage Analysis 1", "route": "storageanalysis1" },
+          { "name": "Storage Analysis 2", "route": "storageanalysis2" }
+        ]
+      },
+      { "name": "Network", "route": "network" },
+      { "name": "Resource group", "route": "resourcegrouplist" }
+    ]
+  },
+  {
+    "name": "GCP",
+    "children": [
+      { "name": "Compute", "route": "compute" },
+      {
+        "name": "Storage",
+        "children": [
+          { "name": "Storage Analysis 1", "route": "storageanalysis1" },
+          { "name": "Storage Analysis 2", "route": "storageanalysis2" }
+        ]
+      },
+      { "name": "Network", "route": "network" },
+      { "name": "Resource group", "route": "resourcegrouplist" }
+    ]
+  }
+]

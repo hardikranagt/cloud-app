@@ -1,0 +1,88 @@
+{
+    "data": [
+        {
+            "Name": "DefaultResourceGroup-CID",
+            "Location": "centralindia",
+            "Tags": "No tags",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "Foodfiesta_Resource",
+            "Location": "centralindia",
+            "Tags": "No tags",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "TeamBook-DevTest-Rg",
+            "Location": "centralindia",
+            "Tags": "DevTest",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "mcpp-purchase",
+            "Location": "eastus",
+            "Tags": "No tags",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "RG-Jump",
+            "Location": "eastus",
+            "Tags": "dev",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "RG-Net",
+            "Location": "eastus",
+            "Tags": "No tags",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "NetworkWatcherRG",
+            "Location": "eastus",
+            "Tags": "No tags",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "DefaultResourceGroup-EUS",
+            "Location": "eastus",
+            "Tags": "No tags",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "testFunctionAzu_group",
+            "Location": "eastus",
+            "Tags": "dev",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "LogAnalyticsDefaultResources",
+            "Location": "eastus",
+            "Tags": "No tags",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "testDockImage",
+            "Location": "eastus",
+            "Tags": "No tags",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "MC_testDockImage_testKubeCluster_eastus",
+            "Location": "eastus",
+            "Tags": "testKubeCluster, testDockImage",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "MA_testprometheusmatrics_eastus_managed",
+            "Location": "eastus",
+            "Tags": "dev",
+            "Provisioning State": "Succeeded"
+        },
+        {
+            "Name": "testResource",
+            "Location": "spaincentral",
+            "Tags": "No tags",
+            "Provisioning State": "Succeeded"
+        }
+    ]
+}
