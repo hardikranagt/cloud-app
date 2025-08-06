@@ -1,47 +1,149 @@
 [
   {
     "name": "AWS",
+    "icon": "Cloud",
+    "color": "orange",
     "children": [
-      { "name": "Compute", "route": "compute" },
+      {
+        "name": "Compute",
+        "icon": "Server",
+        "route": "aws/compute"
+      },
       {
         "name": "Storage",
+        "icon": "Database",
         "children": [
-          { "name": "Storage Analysis 1", "route": "storageanalysis1" },
-          { "name": "Storage Analysis 2", "route": "storageanalysis2" }
+          {
+            "name": "Storage Analysis",
+            "icon": "BarChart3",
+            "route": "aws/storage/analysis"
+          },
+          {
+            "name": "Storage Testing",
+            "icon": "TestTube",
+            "route": "aws/storage/testing"
+          }
         ]
       },
-      { "name": "Network", "route": "network" },
-      { "name": "Resource group", "route": "resourcegrouplist" }
+      {
+        "name": "Network",
+        "icon": "Network",
+        "route": "aws/network"
+      },
+      {
+        "name": "Resource Group",
+        "icon": "Folder",
+        "children": [
+          {
+            "name": "Resource Group List",
+            "icon": "List",
+            "route": "aws/resource-group/list"
+          },
+          {
+            "name": "Resource Group Analysis",
+            "icon": "PieChart",
+            "route": "aws/resource-group/analysis"
+          }
+        ]
+      }
     ]
   },
   {
     "name": "Azure",
+    "icon": "Cloud",
+    "color": "blue",
     "children": [
-      { "name": "Compute", "route": "compute" },
+      {
+        "name": "Compute",
+        "icon": "Server",
+        "route": "azure/compute"
+      },
       {
         "name": "Storage",
+        "icon": "Database",
         "children": [
-          { "name": "Storage Analysis 1", "route": "storageanalysis1" },
-          { "name": "Storage Analysis 2", "route": "storageanalysis2" }
+          {
+            "name": "Storage Analysis",
+            "icon": "BarChart3",
+            "route": "azure/storage/analysis"
+          },
+          {
+            "name": "Storage Testing",
+            "icon": "TestTube",
+            "route": "azure/storage/testing"
+          }
         ]
       },
-      { "name": "Network", "route": "network" },
-      { "name": "Resource group", "route": "resourcegrouplist" }
+      {
+        "name": "Network",
+        "icon": "Network",
+        "route": "azure/network"
+      },
+      {
+        "name": "Resource Group",
+        "icon": "Folder",
+        "children": [
+          {
+            "name": "Resource Group List",
+            "icon": "List",
+            "route": "azure/resource-group/list"
+          },
+          {
+            "name": "Resource Group Analysis",
+            "icon": "PieChart",
+            "route": "azure/resource-group/analysis"
+          }
+        ]
+      }
     ]
   },
   {
     "name": "GCP",
+    "icon": "Cloud",
+    "color": "green",
     "children": [
-      { "name": "Compute", "route": "compute" },
+      {
+        "name": "Compute",
+        "icon": "Server",
+        "route": "gcp/compute"
+      },
       {
         "name": "Storage",
+        "icon": "Database",
         "children": [
-          { "name": "Storage Analysis 1", "route": "storageanalysis1" },
-          { "name": "Storage Analysis 2", "route": "storageanalysis2" }
+          {
+            "name": "Storage Analysis",
+            "icon": "BarChart3",
+            "route": "gcp/storage/analysis"
+          },
+          {
+            "name": "Storage Testing",
+            "icon": "TestTube",
+            "route": "gcp/storage/testing"
+          }
         ]
       },
-      { "name": "Network", "route": "network" },
-      { "name": "Resource group", "route": "resourcegrouplist" }
+      {
+        "name": "Network",
+        "icon": "Network",
+        "route": "gcp/network"
+      },
+      {
+        "name": "Resource Group",
+        "icon": "Folder",
+        "children": [
+          {
+            "name": "Resource Group List",
+            "icon": "List",
+            "route": "gcp/resource-group/list"
+          },
+          {
+            "name": "Resource Group Analysis",
+            "icon": "PieChart",
+            "route": "gcp/resource-group/analysis"
+          }
+        ]
+      }
     ]
   }
 ]

@@ -3,6 +3,7 @@ import {
   ChevronDown, ChevronRight, Cloud, Server, Database, Network, Folder,
   FileText, BarChart3, TestTube, List, PieChart
 } from 'lucide-react';
+import sideBarData from '../config/SideBar.json';
 
 const NavLink = ({ to, children, className }: any) => {
   const [isActive] = useState(false);
@@ -12,63 +13,6 @@ const NavLink = ({ to, children, className }: any) => {
     </a>
   );
 };
-
-const sidebarData = [
-  {
-    name: "AWS", icon: Cloud, color: "orange", children: [
-      { name: "Compute", icon: Server, route: "aws/compute" },
-      {
-        name: "Storage", icon: Database, children: [
-          { name: "Storage Analysis", icon: BarChart3, route: "aws/storage/analysis" },
-          { name: "Storage Testing", icon: TestTube, route: "aws/storage/testing" }
-        ]
-      },
-      { name: "Network", icon: Network, route: "aws/network" },
-      {
-        name: "Resource Group", icon: Folder, children: [
-          { name: "Resource Group List", icon: List, route: "aws/resource-group/list" },
-          { name: "Resource Group Analysis", icon: PieChart, route: "aws/resource-group/analysis" }
-        ]
-      }
-    ]
-  },
-  {
-    name: "Azure", icon: Cloud, color: "blue", children: [
-      { name: "Compute", icon: Server, route: "azure/compute" },
-      {
-        name: "Storage", icon: Database, children: [
-          { name: "Storage Analysis", icon: BarChart3, route: "azure/storage/analysis" },
-          { name: "Storage Testing", icon: TestTube, route: "azure/storage/testing" }
-        ]
-      },
-      { name: "Network", icon: Network, route: "azure/network" },
-      {
-        name: "Resource Group", icon: Folder, children: [
-          { name: "Resource Group List", icon: List, route: "azure/resource-group/list" },
-          { name: "Resource Group Analysis", icon: PieChart, route: "azure/resource-group/analysis" }
-        ]
-      }
-    ]
-  },
-  {
-    name: "GCP", icon: Cloud, color: "green", children: [
-      { name: "Compute", icon: Server, route: "gcp/compute" },
-      {
-        name: "Storage", icon: Database, children: [
-          { name: "Storage Analysis", icon: BarChart3, route: "gcp/storage/analysis" },
-          { name: "Storage Testing", icon: TestTube, route: "gcp/storage/testing" }
-        ]
-      },
-      { name: "Network", icon: Network, route: "gcp/network" },
-      {
-        name: "Resource Group", icon: Folder, children: [
-          { name: "Resource Group List", icon: List, route: "gcp/resource-group/list" },
-          { name: "Resource Group Analysis", icon: PieChart, route: "gcp/resource-group/analysis" }
-        ]
-      }
-    ]
-  }
-];
 
 const getColorClasses = (color: string, type = 'gradient') => {
   const colors: any = {
@@ -202,7 +146,7 @@ const Sidebar = () => {
       </div>
       <nav className="flex-1 p-4 overflow-y-auto">
         <ul className="space-y-2">
-          {sidebarData.map(section => renderMainItem(section))}
+          {sideBarData.map(section => renderMainItem(section))}
         </ul>
       </nav>
     </aside>
